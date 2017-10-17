@@ -13,6 +13,10 @@ public class UIManager : ExtendedMonoBehaviour {
     PlayerPanel CombatPlayerPanel;
     [SerializeField]
     SkillTree SkillTreePanel;
+    [SerializeField]
+    InventoryUI InventoryPanel;
+
+    List<GameObject> ToggleablePanels = new List<GameObject>();
 
     [Header("Misc.")]
     [SerializeField]
@@ -36,17 +40,23 @@ public class UIManager : ExtendedMonoBehaviour {
     [SerializeField]
     List<BaseStatusEffect> TestEffect;
     List<IconCooldown> BuffImages = new List<IconCooldown>();
+    List<IconCooldown> AbilityImages = new List<IconCooldown>();
 
     private void Awake()
     {
         StaticUIManager = this;
+        
     }
     // Use this for initialization
     void Start () {
         
         SetActiveAbilityImages();
         BuffImages = BuffPanel.GetComponentsInChildren<IconCooldown>().ToList();
-	}
+
+        ToggleablePanels.Add(InventoryPanel.gameObject);
+        for (int i = 0; i < ToggleablePanels.Count; i++)
+            ToggleablePanels[i].SetActive(false);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -60,18 +70,19 @@ public class UIManager : ExtendedMonoBehaviour {
 
     void SetActiveAbilityImages()
     {
-        List<Image> imgs = AbilityPanel.GetComponentsInChildren<Image>().ToList();
+
+        AbilityImages = AbilityPanel.GetComponentsInChildren<IconCooldown>().ToList();
         Player.StaticPlayer.WithComponent<ActorAbilityManager>(x => PlayerActiveAbilities = x);
         List<BaseAbility> abs = PlayerActiveAbilities.GetActiveAbilityList();
 
-        for(int i = 0; i < imgs.Count; i++)
+        for(int i = 0; i < AbilityImages.Count; i++)
         {
             if (i < abs.Count)
             {
-                imgs[i].sprite = abs[i].Icon;
+                AbilityImages[i].SetAbility(abs[i]);
             }
             else
-                imgs[i].sprite = null;
+                AbilityImages[i].ClearAbility();
         }
     }
 
@@ -121,6 +132,7 @@ public class UIManager : ExtendedMonoBehaviour {
     {
         Player.StaticPlayer.UseAbility(_index);
         Debug.Log(PlayerActiveAbilities.GetActiveAbilityList()[_index].Icon + " button was pressed.");
+        AbilityImages[_index].RunAbilityCooldown(PlayerActiveAbilities.GetActiveAbilityList()[_index].Cooldown);
     }
 
     public void PylonAbilityPress()
@@ -140,6 +152,15 @@ public class UIManager : ExtendedMonoBehaviour {
         {
             Player.StaticPlayer.AddStatusEffect(effect, null);
         }
-        
+    }
+
+    public void OpenInventory()
+    {
+        InventoryPanel.gameObject.SetActive(true);
+    }
+
+    public void OpenCharacterPanel()
+    {
+        OpenInventory();
     }
 }

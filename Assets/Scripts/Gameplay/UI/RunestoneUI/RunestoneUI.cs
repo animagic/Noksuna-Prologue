@@ -42,6 +42,10 @@ public class RunestoneUI : MonoBehaviour {
         {
             ListParents[i].SetActive(false);
         }
+        for(int j = 0; j < StoneSockets.Count; j++)
+        {
+            StoneSockets[j].gameObject.SetActive(false);
+        }
     }
 	
 	// Update is called once per frame
@@ -158,7 +162,6 @@ public class RunestoneUI : MonoBehaviour {
                     StoneSockets[i].SocketedStone = stoneSlots[i].SlottedStone;
                     StoneSockets[i].GetComponent<Image>().sprite = StoneSockets[i].SocketedStone.UISprite;
                 }
-                    
             }
             else
             {

@@ -21,7 +21,7 @@ MonoBehaviour:
   AbilityCastTimeType: 0
   AbilityTargetMethod: 1
   CastTime: 2
-  Cooldown: 0
+  Cooldown: 3
   IsDirectionalIfNoTarget: 1
   Icon: {fileID: 21300000, guid: 933ce811de440934593a178e2391c347, type: 3}
   VFX: {fileID: 1936461763382598, guid: 26f5d3a67bd71472a98a992dc2c805d3, type: 2}

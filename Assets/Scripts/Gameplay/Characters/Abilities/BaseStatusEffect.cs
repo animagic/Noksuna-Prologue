@@ -91,7 +91,8 @@ public class BaseStatusEffect : ScriptableObject {
         Icon = _effect.Icon;
         VFX = _effect.VFX;
         StatsEffected = _effect.StatsEffected;
-        MyQuality = _castingAbility.MyElysianStoneQuality;
+        if(_castingAbility)
+            MyQuality = _castingAbility.MyElysianStoneQuality;
         StatusEffectTriggerType = _effect.StatusEffectTriggerType;
         IsTriggered = false;
         IsMultipleAllowed = false;

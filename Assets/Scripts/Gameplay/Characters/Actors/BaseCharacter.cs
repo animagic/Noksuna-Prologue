@@ -481,16 +481,26 @@ public class BaseCharacter : ExtendedMonoBehaviour {
         else
         {
             Debug.Log(_effect.Name + " already exists on " + CharacterName);
+            BaseStatusEffect oldEffect = StatusEffectDurationDictionary.Where(x => x.Key.Name == _effect.Name).Single().Key;
             RemoveStatusEffect(_effect);
             AfflictedStatusEffects.Add(effectNew);
+
+            effectNew.CurrentDuration += oldEffect.CurrentDuration;
+            effectNew.InitialDuration += oldEffect.CurrentDuration;
+
+            if(effectNew.InitialDuration >= oldEffect.MaxDuration)
+            {
+                effectNew.CurrentDuration = oldEffect.MaxDuration;
+                effectNew.InitialDuration = oldEffect.MaxDuration;
+            }
             StatusEffectDurationDictionary.Add(effectNew, effectNew.CurrentDuration);
         }
     }
 
     public void RemoveStatusEffect(BaseStatusEffect _effect)
     {
-        AfflictedStatusEffects.Remove(_effect);
-        StatusEffectDurationDictionary.Remove(_effect);
+        AfflictedStatusEffects.Remove(AfflictedStatusEffects.Where(x => x.Name == _effect.Name).Single());
+        StatusEffectDurationDictionary.Remove(StatusEffectDurationDictionary.Where(x => x.Key.Name == _effect.Name).Single().Key);
         CheckAndRemoveStatBuffs(_effect);
     }
 
@@ -507,9 +517,8 @@ public class BaseCharacter : ExtendedMonoBehaviour {
         if (PrimaryStats.AdditiveBuffs.Any(x => x == _effect))
         {
             buffRemoved = true;
-            PrimaryStats.MultiplicativeBuffs.Remove(_effect);
-        }
             PrimaryStats.AdditiveBuffs.Remove(_effect);
+        }
         if (PrimaryStats.MultiplicativeBuffs.Any(x => x == _effect))
         {
             buffRemoved = true;
