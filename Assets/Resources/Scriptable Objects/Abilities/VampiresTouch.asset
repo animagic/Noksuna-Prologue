@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7f0647701f0647b53fb0c48d05192, type: 3}
+  m_Name: VampiresTouch
+  m_EditorClassIdentifier: 
+  AbilityName: Vampire's Touch
+  AbilityPower: 0
+  Range: 0
+  AttackType: 4
+  TargetType: 0
+  SpellDamageType: 0
+  AbilityQuality: 0
+  AbilityCastTimeType: 0
+  AbilityTargetMethod: 2
+  CastTime: 0
+  Cooldown: 0
+  IsDirectionalIfNoTarget: 0
+  Icon: {fileID: 21300000, guid: bc1380c6471165046b7bfc37608f2e3a, type: 3}
+  VFX: {fileID: 0}
+  StatusEffectsForTarget: []
+  StatusEffectsForSelf: []

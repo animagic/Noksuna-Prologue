@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851b74d786b2d1c4481b8cc7a4939984, type: 3}
+  m_Name: Frostbite
+  m_EditorClassIdentifier: 
+  ItemName: 
+  ItemType: 0
+  RequiredLevel: 0
+  InventoryImage: {fileID: 0}
+  GameModel: {fileID: 1426250734190466, guid: 42e8b405975c10644bad519e85eaccd7, type: 2}
+  isStackable: 0
+  maxStackNumber: 0
+  isUnique: 0
+  WeaponType: 2
+  WeaponSlot: 2
+  AttackValue: 36

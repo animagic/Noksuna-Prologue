@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007fc739ee869d4449f046a6c2cea994, type: 3}
+  m_Name: Silence
+  m_EditorClassIdentifier: 
+  Name: 
+  MaxDuration: 0
+  InitialDuration: 0
+  CurrentDuration: 0
+  TimeIntervalToActivate: 3
+  IntervalTimer: 0
+  ChanceToActivate: 0.5
+  Icon: {fileID: 0}
+  VFX: {fileID: 0}
+  StatsEffected: []
+  TargetToEffect: 0
+  StatusEffectTriggerType: 0
+  IsMultipleAllowed: 0

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 722b182d1408f244b825131f226db7cb, type: 3}
+  m_Name: Fire
+  m_EditorClassIdentifier: 
+  AbilityName: Fire
+  AbilityPower: 50
+  Range: 0
+  AttackType: 2
+  TargetType: 0
+  SpellDamageType: 0
+  AbilityQuality: 0
+  AbilityCastTimeType: 0
+  AbilityTargetMethod: 1
+  CastTime: 2
+  Cooldown: 0
+  IsDirectionalIfNoTarget: 1
+  Icon: {fileID: 21300000, guid: 933ce811de440934593a178e2391c347, type: 3}
+  VFX: {fileID: 1936461763382598, guid: 26f5d3a67bd71472a98a992dc2c805d3, type: 2}
+  MyElysianStoneQuality: 0
+  StatusEffectsForTarget:
+  - {fileID: 11400000, guid: 78089d1f92353fc489af8974016eb917, type: 2}
+  StatusEffectsForSelf: []
