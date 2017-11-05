@@ -1287,6 +1287,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!114 &114695208
 MonoBehaviour:
@@ -1404,7 +1406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00001728587, y: 0.27089244}
+  m_AnchoredPosition: {x: -0.00001728587, y: -0.000030517578}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &130362269
@@ -4025,8 +4027,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1436961082}
   m_HandleRect: {fileID: 1436961081}
   m_Direction: 2
-  m_Value: 0.00000010172526
-  m_Size: 0
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4727,8 +4729,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2039030269}
   m_HandleRect: {fileID: 2039030268}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4895,7 +4897,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 322360976}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.9999998
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5119,6 +5121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!1001 &387555032
 Prefab:
@@ -5476,6 +5480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!114 &400280426
 MonoBehaviour:
@@ -5858,6 +5864,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!114 &450207819
 MonoBehaviour:
@@ -6190,6 +6198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!114 &464597420
 MonoBehaviour:
@@ -7377,6 +7387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!114 &565364476
 MonoBehaviour:
@@ -7911,6 +7923,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!1001 &603470820
 Prefab:
@@ -9173,7 +9187,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1426687823}
   m_Direction: 0
   m_Value: 1
-  m_Size: 0
+  m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10707,6 +10721,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!114 &903205807
 MonoBehaviour:
@@ -10992,7 +11008,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00002670288, y: 0.2708799}
+  m_AnchoredPosition: {x: -0.00002670288, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &945799742
@@ -11581,6 +11597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!114 &977346334
 MonoBehaviour:
@@ -11895,8 +11913,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 954243758}
   m_HandleRect: {fileID: 954243757}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.99815655
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14299,6 +14317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!114 &1257424446
 MonoBehaviour:
@@ -14790,6 +14810,46 @@ MonoBehaviour:
     _visibilityToggleIndent: 0
     _indentContent: 1
     _surroundWithBox: 0
+--- !u!1 &1309038213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1309038215}
+  - component: {fileID: 1309038214}
+  m_Layer: 0
+  m_Name: LevelAudioHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1309038214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309038213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2ddcbae0db1874bb8196fd74d71189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1309038215
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309038213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.87, y: 40, z: 75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1319978492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16304,7 +16364,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00002670288, y: 299.99997}
+  m_AnchoredPosition: {x: -0.00002670288, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1461101741
@@ -17748,6 +17808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!1 &1572775607
 GameObject:
@@ -18498,7 +18560,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 284793425}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9981661
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -19683,6 +19745,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958f64b7a807f1041a914ec578e03e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseImage: {fileID: 0}
+  FillImage: {fileID: 0}
   MyButton: {fileID: 0}
 --- !u!1 &1766711330
 GameObject:
